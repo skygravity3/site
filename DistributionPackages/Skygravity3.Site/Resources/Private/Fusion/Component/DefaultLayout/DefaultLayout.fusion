@@ -1,0 +1,9 @@
+prototype(Skygravity3.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <Skygravity3.Site:Component.Header />
+        {props.content}
+        <Skygravity3.Site:Component.Footer />
+    `
+}

@@ -1,0 +1,6 @@
+
+'Neos.Neos:Shortcut':
+  constraints:
+    nodeTypes:
+      'Skygravity3.Site:Document.HomePage': false
+      'Skygravity3.Site:Constraint.Document.Restricted': false

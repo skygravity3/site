@@ -1,0 +1,14 @@
+'Skygravity3.Site:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Skygravity3.Site:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'Skygravity3.Site:Document.HomePage': false
+      'Skygravity3.Site:Constraint.Document.Restricted': false

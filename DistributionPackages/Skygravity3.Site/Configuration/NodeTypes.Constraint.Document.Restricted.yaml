@@ -1,0 +1,24 @@
+##
+# Adding this as superType will prevent inserting this page type below normal pages
+#
+# [Youtube Tutorial explaining constraints](https://www.youtube.com/watch?v=ZCRYsYvxXFI&t=247s)
+#
+# Example:
+# Let's say you have a have a news overview of news pages below. To force
+# news pages to be created only directly below:
+#
+# 'Skygravity3.Site:Document.NewsOverview':
+#   superTypes:
+#     'Skygravity3.Site:Document.AbstractPage': true
+#   constraints:
+#     nodeTypes:
+#       'Skygravity3.Site:Document.Restricted': false
+#
+# 'Skygravity3.Site:Content.News':
+#   superTypes:
+#     'Skygravity3.Site:Document.AbstractPage': true
+#     'Skygravity3.Site:Constraint.Document.Restricted': true
+#
+##
+'Skygravity3.Site:Constraint.Document.Restricted':
+  abstract: true
